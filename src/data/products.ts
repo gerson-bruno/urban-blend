@@ -1,28 +1,15 @@
-import type { Product } from '../types/product'
 
-export const products: Product[] = [
-  {
-    id: 1,
-    name: 'Café Urban Roast',
-    category: 'cafe',
-    price: 29.9,
-    image: 'https://via.placeholder.com/600x400?text=Cafe+Urban+Roast',
-    description: 'Café especial com aroma intenso e torra média.'
-  },
-  {
-    id: 2,
-    name: 'Cerveja Blend Lager',
-    category: 'cerveja',
-    price: 18.5,
-    image: 'https://via.placeholder.com/600x400?text=Cerveja+Blend+Lager',
-    description: 'Cerveja artesanal leve, refrescante e equilibrada.'
-  },
-  {
-    id: 3,
-    name: 'Kit Noite Urbana',
-    category: 'noite',
-    price: 79.9,
-    image: 'https://via.placeholder.com/600x400?text=Kit+Noite+Urbana',
-    description: 'Kit premium com proposta visual para uma experiência urbana.'
-  }
+export const products = [
+  { id: 1, name: 'Espresso Noturno', price: 14.90, category: 'Café', image: '/img/coffee01.png' },
+  { id: 2, name: 'IPA Asphalt', price: 32.00, category: 'Cerveja', image: '/img/beer.jpg' },
+  { id: 3, name: 'Tabaco Classic Gold', price: 45.00, category: 'Tabacaria', image: '/img/tabaco.jpg' },
+  { id: 4, name: 'Stout Midnight', price: 35.00, category: 'Cerveja', image: '/img/beer(4).jpg' },
+  { id: 5, name: 'Grão Bourbon', price: 55.00, category: 'Café', image: '/img/coffee04.png' },
+  { id: 6, name: 'Pilsen Neon', price: 22.00, category: 'Cerveja', image: '/img/beer(2).jpg' },
+  { id: 7, name: 'V60 Filtered', price: 12.00, category: 'Café', image: '/img/coffee03.png' },
+  { id: 8, name: 'Weiss Street', price: 28.90, category: 'Cerveja', image: '/img/beer(5).jpg' },
+  { id: 9, name: 'Seda Premium Black', price: 12.00, category: 'Tabacaria', image: '/img/tabaco2.jpg' },
+  { id: 10, name: 'Red Ale Brick', price: 30.00, category: 'Cerveja', image: '/img/beer(3).jpg' },
+  { id: 11, name: 'Moka Classic', price: 42.00, category: 'Café', image: '/img/coffee02.png' },
+  { id: 12, name: 'Isqueiro Urban', price: 18.00, category: 'Tabacaria', image: '/img/tabaco3.jpg' },
 ]

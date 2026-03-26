@@ -25,16 +25,11 @@ export const useCartStore = defineStore('cart', {
   actions: {
     addToCart(product: Product) {
       const existingItem = this.items.find((item) => item.id === product.id)
-
       if (existingItem) {
         existingItem.quantity += 1
       } else {
-        this.items.push({
-          ...product,
-          quantity: 1
-        })
+        this.items.push({ ...product, quantity: 1 })
       }
-
       this.saveCart()
     },
 
@@ -45,7 +40,6 @@ export const useCartStore = defineStore('cart', {
 
     increaseQuantity(productId: number) {
       const item = this.items.find((item) => item.id === productId)
-
       if (item) {
         item.quantity += 1
         this.saveCart()
@@ -54,15 +48,12 @@ export const useCartStore = defineStore('cart', {
 
     decreaseQuantity(productId: number) {
       const item = this.items.find((item) => item.id === productId)
-
       if (!item) return
-
       if (item.quantity > 1) {
         item.quantity -= 1
       } else {
         this.items = this.items.filter((item) => item.id !== productId)
       }
-
       this.saveCart()
     },
 
@@ -77,9 +68,13 @@ export const useCartStore = defineStore('cart', {
 
     loadCart() {
       const savedCart = localStorage.getItem('urban-blend-cart')
-
       if (savedCart) {
-        this.items = JSON.parse(savedCart)
+        try {
+          this.items = JSON.parse(savedCart)
+        } catch (e) {
+          console.error("Erro ao carregar carrinho", e)
+          this.items = []
+        }
       }
     }
   }
