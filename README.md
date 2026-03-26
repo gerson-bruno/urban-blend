@@ -37,6 +37,4 @@ Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kit
 ## Contribuição
 Pull requests são bem-vindos!
 
-## Contato
-- Alan: alan@email.com
-- Gerson: gerson@email.com
+
