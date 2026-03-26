@@ -1,21 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Reset para o nosso tema Urban */
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color-scheme: dark;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+/* :root {
+  --bg-main: #06171F;
+  --primary: #C58961;
+  --text-light: #E7D6AC;
+  --text-dark: #0E171E;
+} */
+
+/* Reset básico para garantir que o layout ocupe a tela toda sem barras estranhas */
+html, body {
   margin: 0;
-  display: flex;
-  place-content: center;
-  min-width: 320px;
+  padding: 0;
+  width: 100%;
   min-height: 100vh;
-  background-color: #000; /* Fundo preto total */
-  color: #fff;
+  background-color: #06171F;
+  color: #E7D6AC;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; /* Impede quebra lateral */
 }
 
 #app {
