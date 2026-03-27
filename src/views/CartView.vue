@@ -15,7 +15,7 @@ const handleFinish = () => {
 </script>
 
 <template>
-  <div class="w-full animate-fade-in">
+  <div class="w-full pt-6 animate-fade-in">
     <header class="mb-14 border-l-4 border-[#C58961] pl-5">
       <h2 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-[#E7D6AC]">
         Sua <span class="text-[#C58961]">Seleção</span>

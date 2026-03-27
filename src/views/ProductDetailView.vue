@@ -23,9 +23,12 @@ const formatPrice = (v: number) => v.toFixed(2).replace('.', ',');
 </script>
 
 <template>
-  <div v-if="product" class="w-full max-w-[1200px] mx-auto px-6 py-10 animate-fade-in">
+  <div v-if="product" class="w-full max-w-[1200px] mx-auto px-6 pt-6 pb-10 animate-fade-in">
     
-    <RouterLink to="/products" class="inline-block mb-12 text-[10px] uppercase tracking-[3px] text-[#C58961] font-bold no-underline hover:text-[#E7D6AC] transition-colors">
+    <RouterLink 
+      to="/products" 
+      class="inline-block mb-4 text-[10px] uppercase tracking-[3px] text-[#C58961] font-bold no-underline hover:text-[#E7D6AC] transition-colors"
+    >
       ← Voltar ao Catálogo
     </RouterLink>
 
@@ -46,19 +49,21 @@ const formatPrice = (v: number) => v.toFixed(2).replace('.', ',');
           {{ product.category }}
         </span>
         
-        <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-[0.85] mt-6 mb-8 text-[#E7D6AC]">
+        <h1 class="text-5xl md:text-7xl font-black uppercase italic leading-[0.85] mt-4 mb-6 text-[#E7D6AC]">
           {{ product.name.split(' ')[0] }}
-          <span class="block text-[#C58961] mt-2">{{ product.name.split(' ').slice(1).join(' ') }}</span>
+          <span class="block text-[#C58961] mt-2">
+            {{ product.name.split(' ').slice(1).join(' ') }}
+          </span>
         </h1>
 
-        <div class="w-16 h-1.5 bg-[#C58961] mb-10"></div>
+        <div class="w-16 h-1.5 bg-[#C58961] mb-8"></div>
 
-        <p class="text-lg md:text-xl leading-relaxed text-[#E7D6AC]/60 mb-10 font-light">
+        <p class="text-lg md:text-xl leading-relaxed text-[#E7D6AC]/60 mb-8 font-light">
           Blend exclusivo selecionado para a experiência Urban Blend. 
           Notas intensas e acabamento premium em {{ product.category.toLowerCase() }}.
         </p>
 
-        <div class="flex items-baseline gap-3 mb-12">
+        <div class="flex items-baseline gap-3 mb-8">
           <span class="text-2xl opacity-30 font-light">R$</span>
           <span class="text-6xl md:text-7xl font-black text-[#E7D6AC]">
             {{ formatPrice(product.price) }}
@@ -72,7 +77,7 @@ const formatPrice = (v: number) => v.toFixed(2).replace('.', ',');
           Adicionar ao Carrinho
         </button>
 
-        <div class="flex gap-8 mt-12 opacity-20 text-[9px] uppercase font-bold tracking-[2px]">
+        <div class="flex gap-8 mt-8 opacity-20 text-[9px] uppercase font-bold tracking-[2px]">
           <span>✓ Qualidade Premium</span>
           <span>✓ Origem Controlada</span>
         </div>
@@ -82,7 +87,9 @@ const formatPrice = (v: number) => v.toFixed(2).replace('.', ',');
 
   <div v-else class="min-h-[60vh] flex flex-col items-center justify-center text-center">
     <p class="text-2xl opacity-40 italic">Produto esgotado no estoque urbano.</p>
-    <RouterLink to="/products" class="mt-6 text-[#C58961] uppercase tracking-widest font-bold">Voltar</RouterLink>
+    <RouterLink to="/products" class="mt-6 text-[#C58961] uppercase tracking-widest font-bold">
+      Voltar
+    </RouterLink>
   </div>
 </template>
 

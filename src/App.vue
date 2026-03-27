@@ -21,15 +21,15 @@ onMounted(() => {
     <MyHeader v-if="!isHome" />
 
     <main 
-      :class="[
-        'transition-all duration-500',
-        isHome 
-          ? 'w-full min-h-screen flex items-center justify-center' 
-          : 'max-w-[1200px] mx-auto px-6 md:px-10 pb-20 pt-[180px] md:pt-[220px]'
-      ]"
-    >
-      <router-view />
-    </main>
+  :class="[
+    'transition-all duration-500',
+    isHome 
+      ? 'w-full min-h-screen flex items-center justify-center' 
+      : 'max-w-[1200px] mx-auto px-6 md:px-10 pb-20 pt-16'
+  ]"
+>
+  <router-view />
+</main>
 
     <MyFooter v-if="!isHome" />
   </div>

@@ -5,7 +5,7 @@ import type { Product } from '../types/product'
 </script>
 
 <template>
-  <div class="relative min-h-screen bg-[#06171F] text-[#E7D6AC] pt-[120px] pb-20 px-5 md:px-10 max-w-[1300px] mx-auto overflow-x-hidden">
+  <div class="relative min-h-screen bg-[#06171F] text-[#E7D6AC] pt-6 pb-20 px-5 md:px-10 max-w-[1300px] mx-auto overflow-x-hidden">
     
     <div class="absolute inset-0 pointer-events-none z-0">
       <div class="absolute w-[400px] h-[400px] bg-[#C58961] blur-[120px] opacity-[0.12] top-[10%] -left-[100px]"></div>
