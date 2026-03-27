@@ -2,6 +2,14 @@
 
 Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kits urbanos. 
 
+---
+
+## Vizualizar Online
+
+Para vizualizar o projeto clique [aqui](https://gerson-bruno.github.io/urban-blend).
+
+
+
 ## Preview do Projeto
 ![Preview Home](public/img/preview_home.png)
 ![Preview Products](public/img/preview_products.png)
