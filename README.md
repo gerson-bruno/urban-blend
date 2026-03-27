@@ -2,6 +2,10 @@
 
 Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kits urbanos.
 
+## Preview do Projeto
+![Preview Home](public/img/preview_home.png)
+![Preview Products](public/img/preview_products.png)
+
 ## Funcionalidades
 - Listagem de produtos
 - Carrinho de compras
