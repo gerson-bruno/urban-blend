@@ -2,7 +2,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
-/* export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/urban-blend/' : '/',
   plugins: [
     vue(),
   ],
@@ -11,9 +12,4 @@ import { fileURLToPath, URL } from 'node:url'
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
-}) */
-
-
-export default defineConfig({
-  base: '/urban-blend/',
-})
+}))
