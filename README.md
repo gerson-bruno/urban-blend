@@ -1,6 +1,6 @@
 # Urban Blend
 
-Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kits urbanos.
+Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kits urbanos. 
 
 ## Preview do Projeto
 ![Preview Home](public/img/preview_home.png)
@@ -41,4 +41,9 @@ Projeto front-end para o Urban Blend, uma loja virtual de cafés, cervejas e kit
 ## Contribuição
 Pull requests são bem-vindos!
 
+## Autores
+
+- [Alan Maia](https://github.com/almmaia)
+- [Gerson Bruno](https://github.com/gerson-bruno)
+- [Rômulo Ribeiro](https://github.com/ribeirojr87)
 
